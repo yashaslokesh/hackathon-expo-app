@@ -1,0 +1,180 @@
+/* Hide default checkbox */
+#Sponsor input[type=checkbox] {
+  display: none;
+}
+#Sponsor .fa-square, #Sponsor .fa-check-square {
+  font-size: 50px;
+  color: #FF7BAC;
+}
+ #Sponsor .fa-square, #Sponsor .disabled {
+  opacity: 0.5;
+}
+#Sponsor .hoverable:hover {
+  opacity: 1;
+}
+
+#diversifyWinnersModal img.gradient-lightbulb {
+  height: 225px;
+  margin-top: -60px;
+  margin-right: -50px;
+  margin-bottom: -20px;
+}
+#diversifyWinnersModal div.diversity-modal {
+  background-color: transparent;
+  color: white;
+  margin: 10px 10px 0px 10px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+}
+/*=======================================*/
+#Sonsor table td.Trophy-Case {
+  font-size: 75px;
+}
+#Sponsor table thead th:nth-of-type(4) {
+  text-align: center;
+  width: 175px;
+}
+#Sponsor table tr.voting-row td {
+  padding: 5px 0px;
+}
+
+#Sponsor table tbody tr.voting-row td:nth-of-type(1) {
+  text-align: center;
+  padding-top: 12px;
+  width: 95px;
+}
+#Sponsor table thead th:nth-of-type(3) {
+  text-align: left;
+  padding-left: 20px;
+}
+#Sponsor div.Project div.Sponsor-Table {
+  text-align: left;
+  font-size: 16px;
+  color: #999;
+}
+/*========================================*/
+#Sponsor h5.modal-challenge {
+  font-weight: bold;
+  padding: 5px 0px;
+  width: 100%;
+  margin: 10px 10px 0px;
+}
+#Sponsor ul.selection-list {
+  padding-left: 10px;
+  border-left: 3px solid #B190CC;
+  margin-left: 13px;
+}
+
+/* ======== [Override Technica Button Styles] ======= */
+#Sponsor button.button {
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 5px 15px;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+}
+#Sponsor button.submit {
+  width: 200px;
+}
+
+/* ================================================== */
+
+
+
+@media screen and (max-width: 374px) {
+  #Sponsor div.no-submissions {
+    word-break: break-word;
+  }
+}
+
+div.bd-example-modal-sm button.button {
+  width: 100%;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 475px) {
+  #Sponsor table tbody tr.voting-row td:nth-of-type(1) {
+    width: 55px;
+  }
+  #Sponsor .modal-footer {
+    display: block;
+  }
+  #Sponsor button.button {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+}
+
+
+
+
+/*=====================================================*/
+#Sponsor button.task-header {
+    font-size: 20px;
+}
+
+#Sponsor ul {
+  list-style: none;
+}
+
+.fa-user-check, .fa-check-circle {
+  color: #ba92db;
+}
+
+#Sponsor div.task-header {
+  border-bottom: 3px solid #1c1c1c;
+  margin-top: -1px;
+  box-shadow: none;
+  margin-left: 7px;
+}
+
+#Sponsor div.task-header h5, p {
+  margin-left: 7px;
+}
+
+#Sponsor div.task {
+  margin-top: 5px;
+  padding: 1px 2px;
+  box-shadow: none;
+  width: 100%;
+}
+
+#Sponsor button.task-title {
+  background-color: transparent;
+  border: 0px solid;
+  text-align: left;
+  color: white;
+  font-size: 17.5px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  outline: none;
+  padding-left: 7px;
+  width:100%;
+}
+
+#Sponsor button.task-icon {
+  background-color: transparent;
+  border: 0px solid;
+  color: #2f2f2f;
+  width: 35px;
+  font-size: 15px;
+  color: white;
+  outline: none;
+  margin-left: 10px;
+}
+
+#Sponsor .fa-circle {
+  color: #b190cc;
+  font-size: 25px;
+}
+
+#Sponsor .fa-times-circle {
+  color: #ff7bac;
+  font-size: 18px;
+}

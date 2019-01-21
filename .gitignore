@@ -1,0 +1,9 @@
+.DS_Store
+venv/
+__pycache__/
+config.py
+config.cfg
+*.pyc
+*.pem
+node_modules/
+.vscode/

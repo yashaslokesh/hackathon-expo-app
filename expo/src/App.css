@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+/* Overarching font, app coloration */
+@font-face {
+  font-family: 'DINPro';
+  src: url('./fonts/DINPro-Regular.otf');
+}
+
+@font-face {
+  font-family: 'DINPro';
+  font-weight: 600;
+  src: url('./fonts/DINPro-Bold.otf');
+}
+
+html {
+  background-color: #222;
+}
+
+.App {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+.App::before {
+  background-image: url('./imgs/banner.jpg');
+  background-repeat: no-repeat;
+  background-color: #222;
+  background-size: cover;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+/* App wide modal styles */
+.modal-content {
+  background-color: #222;
+}
+.modal-header {
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.modal-footer {
+  border-top: 1px solid rgba(0,0,0,.125);
+}
+.close {
+  color: #fff;
+}
+.close:hover {
+  color: #fff;
+}
+
+/* Button styles */
+.button {
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:disabled {
+  opacity: 0.5;
+}
+
+/* Get rid of dark blue outline */
+.button:active, .button:focus {
+  outline: none;
+}
+
+/* Primary button styles */
+.button-primary:not([disabled]):hover {
+  background-color: #00FFFF;
+  border: 3px solid #00FFFF;
+}
+.button-primary {
+  background-color: #00C7C7;
+  border: 3px solid #00C7C7;
+}
+
+/* Secondary button styles */
+.button-secondary:not([disabled]):hover {
+  background-color: #FF96BD;
+  border: 3px solid #FF96BD;
+}
+.button-secondary {
+  background-color: #FF7BAC;
+  border: 3px solid #FF7BAC;
+}
+
+/* Warning button styles */
+.button-warning:not([disabled]):hover {
+  background-color: #DF3B57;
+  border: 3px solid #DF3B57;
+}
+.button-warning {
+  background-color: #FC4363;
+  border: 3px solid #FC4363;
+}
+
+/* Link style button */
+.link-button {
+  border-style: 1px solid;
+  border-radius: 5px;
+  border-color: #00C7C7;
+  padding: 0px;
+  background: none;
+  color: #00C7C7;
+  font-size: 1rem;
+  border:none;
+}
+.link-button:hover {
+  color: #00FFFF;
+  border-color: #00FFFF;
+}
+
+/* Error styles */
+.error-group {
+  width: 100%;
+  margin-bottom: 7px;
+}
+.error-text {
+  background-color: #2f2f2f;
+  border: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  outline: none;
+  width:100%;
+  padding: 10px;
+}
+.error-icon {
+  padding: 10px;
+  background-color: #2f2f2f;
+  border: 0px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: white;
+  outline: none;
+  border-right: 2px solid rgb(255,255,255,0.125);
+}
+.fa-exclamation-triangle {
+  color: #00ffff;
+}
+
+/* Layout */
+.break-word {
+  word-break: break-word;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.m-r-s {
+  margin-right: 0.5rem;
+}
+
+.m-r-m {
+  margin-right: 1rem;
+}
+
+.m-b-m {
+  margin-bottom: 1rem;
+}
+
+.p-a-m {
+  padding: 1rem;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-right-desktop {
+  float: right;
+}
+
+@media screen and (max-width: 475px) {
+  .float-right-desktop {
+    float: none !important;
+  }
+}
