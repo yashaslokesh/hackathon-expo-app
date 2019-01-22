@@ -388,6 +388,7 @@ def import_challenges():
                          if prize[1] == company_name]
 
 
+        #Autogenerate access_code
         access_code = generate_random_access_code(8)
         company_obj = companies.find_one({'access_code': {'$eq': access_code.upper()}})
         # Keep generating codes until unique
@@ -398,10 +399,9 @@ def import_challenges():
         company_name_no_spaces = "".join(company_name.split())
         challenges_obj = {}
 
-
+        # Go through all challenges
         for challenge_name, num_winners in challenge_info:
             challenge_id = company_name_no_spaces + '_challenge' + datetime.datetime.now().strftime('%Y%m%d%H%M%S')
-
 
             challenges_obj[challenge_id] = {
                 'challenge_name': challenge_name,
