@@ -15,6 +15,7 @@ import datetime
 import os
 from seed_db import *
 import config
+from devpost_scraper import *
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
@@ -374,19 +375,16 @@ def delete_all_projects():
     # ProjectID that won the challenge
 
 @app.route('/api/import-challenges')
-@is_admin
 def import_challenges():
     devpost_url = "https://bitcamp2018.devpost.com/submissions"
     companies = mongo.db.companies
 
-
     prize_list = get_challenges(devpost_url)
     company_list = []
     company_names = list(set([prize[1] for prize in prize_list]))
-    num_winners = 1
     
     for company_name in company_names:
-        challenge_names = [prize[0] for prize in prize_list
+        challenge_info = [[prize[0],prize[2]] for prize in prize_list
                          if prize[1] == company_name]
 
 
@@ -401,13 +399,13 @@ def import_challenges():
         challenges_obj = {}
 
 
-        for challenge_name in challenge_names:
+        for challenge_name, num_winners in challenge_info:
             challenge_id = company_name_no_spaces + '_challenge' + datetime.datetime.now().strftime('%Y%m%d%H%M%S')
 
 
             challenges_obj[challenge_id] = {
                 'challenge_name': challenge_name,
-                'num_winners': num_winners),
+                'num_winners': num_winners,
                 'winners': []
             }
 
@@ -415,6 +413,9 @@ def import_challenges():
         company_list.append({'company_name':company_name,
                              'access_code':access_code.upper(),
                              'challenges':challenges_obj})
+        companies.insert(company_list[-1])
+
+    return str(prize_list)
 
 @app.route('/api/companies/add', methods=['POST'])
 @is_admin

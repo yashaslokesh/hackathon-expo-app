@@ -48,5 +48,3 @@ def get_challenges(link):
             ret_list.append(tuple(row.split(" - "))+(num_winners[i],))
     
     return ret_list
-
-print(get_challenges("https://bitcamp2018.devpost.com/submissions"))
