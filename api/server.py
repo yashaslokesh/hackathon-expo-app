@@ -5,6 +5,7 @@ from pymongo import MongoClient, UpdateOne
 from flask_cors import CORS
 from bson.objectid import ObjectId
 from bson import json_util
+from bs4 import BeautifulSoup
 import logging
 import random
 import string
@@ -13,6 +14,7 @@ import hashlib
 import io
 import datetime
 import os
+import requests
 from seed_db import *
 
 app = Flask(__name__)
@@ -90,7 +92,8 @@ def get_project(project_id):
         'project_name': project_obj['project_name'],
         'project_url': project_obj['project_url'],
         'challenges': project_obj['challenges'],
-        'challenges_won': project_obj['challenges_won']
+        'challenges_won': project_obj['challenges_won'],
+        'plain_descrp': project_obj.get('plain_descrp',"No description available")
     }
 
     return jsonify(temp_project)
@@ -161,12 +164,14 @@ def parse_csv():
 def get_project_list(projects_obj):
     project_data = []
     for project_name in projects_obj:
+    
         info = {
             'table_number': projects_obj[project_name].table_number,
             'project_name': project_name,
             'project_url': projects_obj[project_name].project_url,
             'challenges': projects_obj[project_name].challenges,
-            'challenges_won': []
+            'challenges_won': [],
+            'plain_descrp': projects_obj[project_name].plain_descrp
         }
         project_data.append(info)
     return project_data
@@ -295,6 +300,42 @@ def add_project():
 
     project_id = projects.insert(project)
     return str(project_id)
+
+## testing description scraping
+@app.route('/api/projects/descrp', methods=['POST'])
+@is_admin
+def get_project_descrp():
+    projects = mongo.db.projects
+
+    project_id = request.json['project_id']
+    project_obj = projects.find_one({'_id': ObjectId(project_id)})
+    project_url = str(project_obj['project_url'])
+
+    r = requests.get(project_url);
+    soup = BeautifulSoup(r.text)
+    x = soup.find(id="app-details-left")
+    return str(x)
+
+## return winners per category
+@app.route('/api/projects/winners', methods=['GET'])
+def get_winners():
+    projects = mongo.db.projects
+
+    winners_list = []
+    for p in projects.find():
+        if p['challenges_won']:
+            temp_project = {
+                'project_id': str(p['_id']),
+                'project_name': p['project_name'],
+                'challenges_won': p['challenges_won']
+            }
+            winners_list.append(temp_project)
+
+    output = {
+        'publish_winners': publish_winners,
+        'project_winners': winners_list
+    }
+    return jsonify(output)
 
 @app.route('/api/projects/bulk_add', methods=['POST'])
 @is_admin

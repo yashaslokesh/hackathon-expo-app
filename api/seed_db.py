@@ -3,6 +3,8 @@ import re
 import requests
 import json
 import time
+from bs4 import BeautifulSoup
+
 
 """
 Assumption: Given A1 -> N15
@@ -45,6 +47,12 @@ class Project:
         self.project_url = project_url
         self.challenges = challenges
         self.table_number = ""
+        
+        # description scraping
+        r = requests.get(str(project_url));
+        soup = BeautifulSoup(r.text, 'lxml')
+        description = soup.find(id="app-details-left")
+        self.plain_descrp = str(description)
 
     def __str__(self):
         return str(self.table_number) + " " + str(self.project_url)
@@ -178,6 +186,7 @@ def parse_csv_internal(reader, not_moving_question=None):
             not_moving[project_name].table_number = needs_to_stay.group(0)
         else:
             moving[project_name] = Project(project_url, challenges)
+            
     return moving, not_moving
 
 
