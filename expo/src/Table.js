@@ -9,13 +9,14 @@ import { SubmitModal } from './Sponsor.js';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import './Table.css';
+import Customize from './customize/customize.js'
 
 import { faSquare } from '../node_modules/@fortawesome/fontawesome-free-regular';
 import { faCheckSquare } from '../node_modules/@fortawesome/fontawesome-free-solid';
 import { library } from '../node_modules/@fortawesome/fontawesome-svg-core';
+import customize from './customize/customize.js';
 library.add(faCheckSquare);
 library.add(faSquare);
-
 class DiversifyWinnersModal extends Component {
   render() {
     return (
@@ -109,11 +110,12 @@ export class CheckBoxColumn extends Component {
 }
 
 class ProjectColumn extends Component {
-
   render() {
     let attempted_challenges = this.props.attempted_challenges;
     let challenges_won = this.props.challenges_won;
-    let colors = ["#FF7BAC", "#B6A1C7", "#17E3E3"];
+    let colors = Customize.table_color;
+    console.log(Customize.table_color)
+    console.log("hi")
     let index = this.props.counter % 3;
     return (
       <td>

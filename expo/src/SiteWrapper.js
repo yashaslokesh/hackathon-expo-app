@@ -2,10 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './SiteWrapper.css';
-
+import Customize from './customize/customize.js'
 
 /* Header / constant app features */
-
 let SiteWrapper = (content) => (
   <div className="App">
     <nav className="navbar navbar-expand-md">
