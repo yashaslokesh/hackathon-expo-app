@@ -1,6 +1,5 @@
 
-// colors 
-
+// color scheme
 export default
 
 {
