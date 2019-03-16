@@ -325,7 +325,7 @@ def get_project_descrp():
         description = "No description available -- invalid URL"
     return str(description)
 
-## return winners per category
+## return all winners per category
 @app.route('/api/projects/winners', methods=['GET'])
 def get_winners():
     projects = mongo.db.projects
@@ -341,7 +341,7 @@ def get_winners():
             winners_list.append(temp_project)
 
     output = {
-        'publish_winners': publish_winners,
+        # 'publish_winners': publish_winners,
         'project_winners': winners_list
     }
     return jsonify(output)
