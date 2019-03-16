@@ -93,7 +93,7 @@ def get_project(project_id):
         'project_url': project_obj['project_url'],
         'challenges': project_obj['challenges'],
         'challenges_won': project_obj['challenges_won'],
-        'plain_descrp': project_obj.get('plain_descrp',"No description available")
+        'plain_description': project_obj.get('plain_description',"No description available")
     }
 
     return jsonify(temp_project)
@@ -164,14 +164,14 @@ def parse_csv():
 def get_project_list(projects_obj):
     project_data = []
     for project_name in projects_obj:
-    
+
         info = {
             'table_number': projects_obj[project_name].table_number,
             'project_name': project_name,
             'project_url': projects_obj[project_name].project_url,
             'challenges': projects_obj[project_name].challenges,
             'challenges_won': [],
-            'plain_descrp': projects_obj[project_name].plain_descrp
+            'plain_description': projects_obj[project_name].plain_description
         }
         project_data.append(info)
     return project_data
@@ -301,8 +301,8 @@ def add_project():
     project_id = projects.insert(project)
     return str(project_id)
 
-## testing description scraping
-@app.route('/api/projects/descrp', methods=['POST'])
+## scrape description for one project
+@app.route('/api/projects/scrape-project-descriptions-from-devpost', methods=['POST'])
 @is_admin
 def get_project_descrp():
     projects = mongo.db.projects
@@ -311,10 +311,19 @@ def get_project_descrp():
     project_obj = projects.find_one({'_id': ObjectId(project_id)})
     project_url = str(project_obj['project_url'])
 
-    r = requests.get(project_url);
-    soup = BeautifulSoup(r.text)
-    x = soup.find(id="app-details-left")
-    return str(x)
+    ## check valid url
+    regex = re.compile(
+        r'^(?:http|ftp)s?://' # http:// or https://
+        r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?))' # domain...
+        r'(?:/?|[/?]\S+)$', re.IGNORECASE)
+
+    if re.match(regex, project_url):
+        r = requests.get(project_url)
+        soup = BeautifulSoup(r.text)
+        description = soup.find(id="app-details-left")
+    else:
+        description = "No description available -- invalid URL"
+    return str(description)
 
 ## return winners per category
 @app.route('/api/projects/winners', methods=['GET'])
@@ -420,7 +429,7 @@ def add_company():
 
     company_name = request.json['company_name']
     access_code = request.json['access_code'].upper()
-    
+
     # Autogenerate 8-character access code if blank one was sent
     if access_code == '':
         access_code = generate_random_access_code(8)

@@ -1,0 +1,790 @@
+[
+    {
+        "access_code": "EBAY",
+        "challenge_id": "Ebay_challenge20190119235614",
+        "challenge_name": "Best Use of a Data Set",
+        "company_id": "5c43ff69ad60e4bd6412f74c",
+        "company_name": "Ebay",
+        "num_winners": 1,
+        "winners": [
+            "5c37b0ce643a57370f676a04"
+        ]
+    },
+    {
+        "access_code": "ALTAMIRA",
+        "challenge_id": "Altamira_challenge20190119235733",
+        "challenge_name": "Best Computer Vision / AI System",
+        "company_id": "5c43ffb8ad60e4bd6412f74d",
+        "company_name": "Altamira",
+        "num_winners": 1,
+        "winners": []
+    },
+    {
+        "access_code": "69J9UMTV",
+        "challenge_id": "Finra_challenge20190122181615",
+        "challenge_name": "Best Designed Investor Education Product",
+        "company_id": "5c47a43f84cdc56260810f0b",
+        "company_name": "Finra",
+        "num_winners": 3,
+        "winners": []
+    },
+    {
+        "access_code": "HMEEAQYT",
+        "challenge_id": "CipherTechSolutions_challenge20190122181615",
+        "challenge_name": "Best Digital Forensic Hack",
+        "company_id": "5c47a43f84cdc56260810f0c",
+        "company_name": "Cipher Tech Solutions",
+        "num_winners": 1,
+        "winners": []
+    },
+    {
+        "access_code": "6KK96D4A",
+        "challenge_id": "SparkPost_challenge20190122181615",
+        "challenge_name": "Best use of SparkPost API",
+        "company_id": "5c47a43f84cdc56260810f0d",
+        "company_name": "SparkPost",
+        "num_winners": 4,
+        "winners": []
+    },
+    {
+        "access_code": "6R3C3C93",
+        "challenge_id": "BestUseofAWS_challenge20190122181615",
+        "challenge_name": "Amazon Web Services",
+        "company_id": "5c47a43f84cdc56260810f0e",
+        "company_name": "Best Use of AWS",
+        "num_winners": 5,
+        "winners": []
+    },
+    {
+        "access_code": "NDY9FEAR",
+        "challenge_id": "1517Fund_challenge20190122181616",
+        "challenge_name": "Most Unique Hack",
+        "company_id": "5c47a44084cdc56260810f0f",
+        "company_name": "1517 Fund",
+        "num_winners": 15,
+        "winners": []
+    },
+    {
+        "access_code": "TVQGXT4E",
+        "challenge_id": "CapitalOne_challenge20190122181616",
+        "challenge_name": "Best Financial Hack",
+        "company_id": "5c47a44084cdc56260810f10",
+        "company_name": "Capital One",
+        "num_winners": 7,
+        "winners": []
+    },
+    {
+        "access_code": "ACV88K7E",
+        "challenge_id": "MongoDB_challenge20190122181616",
+        "challenge_name": "Best Use of MongoDB Stitch",
+        "company_id": "5c47a44084cdc56260810f11",
+        "company_name": "MongoDB",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "TRRBUGUX",
+        "challenge_id": "Esri_challenge20190122181616",
+        "challenge_name": "Best Hack with Esri APIs and SDKs",
+        "company_id": "5c47a44084cdc56260810f12",
+        "company_name": "Esri",
+        "num_winners": 4,
+        "winners": []
+    },
+    {
+        "access_code": "DGP2427Z",
+        "challenge_id": "Paypal_challenge20190122181616",
+        "challenge_name": "Most Futuristic Hack",
+        "company_id": "5c47a44084cdc56260810f13",
+        "company_name": "Paypal",
+        "num_winners": 11,
+        "winners": []
+    },
+    {
+        "access_code": "Z3UUYCKM",
+        "challenge_id": "FannieMae_challenge20190122181616",
+        "challenge_name": "Housing insights “in-between” Datasets",
+        "company_id": "5c47a44084cdc56260810f14",
+        "company_name": "Fannie Mae",
+        "num_winners": 1,
+        "winners": []
+    },
+    {
+        "access_code": "F66K8WRK",
+        "challenge_id": "Bloomberg_challenge20190122181617",
+        "challenge_name": "Best Philanthropic Hack",
+        "company_id": "5c47a44184cdc56260810f15",
+        "company_name": "Bloomberg",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "RM96FEYE",
+        "challenge_id": "Ark_challenge20190122181617",
+        "challenge_name": "Decentralise Everything: Blockchain challenge",
+        "company_id": "5c47a44184cdc56260810f16",
+        "company_name": "Ark",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "MFF4E3CY",
+        "challenge_id": "BoozAllenHamilton_challenge20190122181617",
+        "challenge_name": "Best Hack for Aiding Natural Disaster Recovery Efforts",
+        "company_id": "5c47a44184cdc56260810f17",
+        "company_name": "Booz Allen Hamilton",
+        "num_winners": 3,
+        "winners": []
+    },
+    {
+        "access_code": "NJVTEZT8",
+        "challenge_id": "LockheedMartin_challenge20190122181617",
+        "challenge_name": "Using Virtual Reality Technology Design the Best Manufacturing Facility",
+        "company_id": "5c47a44184cdc56260810f18",
+        "company_name": "Lockheed Martin",
+        "num_winners": 1,
+        "winners": []
+    },
+    {
+        "access_code": "UY2TBFYU",
+        "challenge_id": "CredibleBehavioralHealth_challenge20190122181617",
+        "challenge_name": "Improving Healthcare with Mobile Technologies",
+        "company_id": "5c47a44184cdc56260810f19",
+        "company_name": "Credible Behavioral Health",
+        "num_winners": 3,
+        "winners": []
+    },
+    {
+        "access_code": "JQWRAAM8",
+        "challenge_id": "Microsoft_challenge20190122181617",
+        "challenge_name": "Best Accessibility Hack",
+        "company_id": "5c47a44184cdc56260810f1a",
+        "company_name": "Microsoft",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "N7JA9DZW",
+        "challenge_id": "Facebook_challenge20190122181617",
+        "challenge_name": "Best Hack (be passionate)",
+        "company_id": "5c47a44184cdc56260810f1b",
+        "company_name": "Facebook",
+        "num_winners": 16,
+        "winners": []
+    },
+    {
+        "access_code": "UYQMYZDP",
+        "challenge_id": "Finra_challenge20190122181736",
+        "challenge_name": "Best Designed Investor Education Product",
+        "company_id": "5c47a49084cdc56260810f1c",
+        "company_name": "Finra",
+        "num_winners": 3,
+        "winners": []
+    },
+    {
+        "access_code": "KMYHAZB9",
+        "challenge_id": "CipherTechSolutions_challenge20190122181737",
+        "challenge_name": "Best Digital Forensic Hack",
+        "company_id": "5c47a49184cdc56260810f1d",
+        "company_name": "Cipher Tech Solutions",
+        "num_winners": 1,
+        "winners": []
+    },
+    {
+        "access_code": "36V8JM3F",
+        "challenge_id": "SparkPost_challenge20190122181737",
+        "challenge_name": "Best use of SparkPost API",
+        "company_id": "5c47a49184cdc56260810f1e",
+        "company_name": "SparkPost",
+        "num_winners": 4,
+        "winners": []
+    },
+    {
+        "access_code": "YJ6XR69C",
+        "challenge_id": "BestUseofAWS_challenge20190122181737",
+        "challenge_name": "Amazon Web Services",
+        "company_id": "5c47a49184cdc56260810f1f",
+        "company_name": "Best Use of AWS",
+        "num_winners": 5,
+        "winners": []
+    },
+    {
+        "access_code": "9HAM79VC",
+        "challenge_id": "1517Fund_challenge20190122181737",
+        "challenge_name": "Most Unique Hack",
+        "company_id": "5c47a49184cdc56260810f20",
+        "company_name": "1517 Fund",
+        "num_winners": 15,
+        "winners": []
+    },
+    {
+        "access_code": "UCVGQEWV",
+        "challenge_id": "CapitalOne_challenge20190122181737",
+        "challenge_name": "Best Financial Hack",
+        "company_id": "5c47a49184cdc56260810f21",
+        "company_name": "Capital One",
+        "num_winners": 7,
+        "winners": []
+    },
+    {
+        "access_code": "WPTPXJXH",
+        "challenge_id": "MongoDB_challenge20190122181737",
+        "challenge_name": "Best Use of MongoDB Stitch",
+        "company_id": "5c47a49184cdc56260810f22",
+        "company_name": "MongoDB",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "NZK9K2QM",
+        "challenge_id": "Esri_challenge20190122181737",
+        "challenge_name": "Best Hack with Esri APIs and SDKs",
+        "company_id": "5c47a49184cdc56260810f23",
+        "company_name": "Esri",
+        "num_winners": 4,
+        "winners": []
+    },
+    {
+        "access_code": "RYR69VP7",
+        "challenge_id": "Paypal_challenge20190122181738",
+        "challenge_name": "Most Futuristic Hack",
+        "company_id": "5c47a49284cdc56260810f24",
+        "company_name": "Paypal",
+        "num_winners": 11,
+        "winners": []
+    },
+    {
+        "access_code": "UYA3AXC2",
+        "challenge_id": "FannieMae_challenge20190122181738",
+        "challenge_name": "Housing insights “in-between” Datasets",
+        "company_id": "5c47a49284cdc56260810f25",
+        "company_name": "Fannie Mae",
+        "num_winners": 1,
+        "winners": []
+    },
+    {
+        "access_code": "KB4PG2TV",
+        "challenge_id": "Bloomberg_challenge20190122181738",
+        "challenge_name": "Best Philanthropic Hack",
+        "company_id": "5c47a49284cdc56260810f26",
+        "company_name": "Bloomberg",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "3ZBGEUNG",
+        "challenge_id": "Ark_challenge20190122181738",
+        "challenge_name": "Decentralise Everything: Blockchain challenge",
+        "company_id": "5c47a49284cdc56260810f27",
+        "company_name": "Ark",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "7KEWHAQ8",
+        "challenge_id": "BoozAllenHamilton_challenge20190122181738",
+        "challenge_name": "Best Hack for Aiding Natural Disaster Recovery Efforts",
+        "company_id": "5c47a49284cdc56260810f28",
+        "company_name": "Booz Allen Hamilton",
+        "num_winners": 3,
+        "winners": []
+    },
+    {
+        "access_code": "9YENM472",
+        "challenge_id": "LockheedMartin_challenge20190122181738",
+        "challenge_name": "Using Virtual Reality Technology Design the Best Manufacturing Facility",
+        "company_id": "5c47a49284cdc56260810f29",
+        "company_name": "Lockheed Martin",
+        "num_winners": 1,
+        "winners": []
+    },
+    {
+        "access_code": "FCXZ6EV6",
+        "challenge_id": "CredibleBehavioralHealth_challenge20190122181738",
+        "challenge_name": "Improving Healthcare with Mobile Technologies",
+        "company_id": "5c47a49284cdc56260810f2a",
+        "company_name": "Credible Behavioral Health",
+        "num_winners": 3,
+        "winners": []
+    },
+    {
+        "access_code": "M9H7V7QC",
+        "challenge_id": "Microsoft_challenge20190122181739",
+        "challenge_name": "Best Accessibility Hack",
+        "company_id": "5c47a49384cdc56260810f2b",
+        "company_name": "Microsoft",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "VMHJ2MY8",
+        "challenge_id": "Facebook_challenge20190122181739",
+        "challenge_name": "Best Hack (be passionate)",
+        "company_id": "5c47a49384cdc56260810f2c",
+        "company_name": "Facebook",
+        "num_winners": 16,
+        "winners": []
+    },
+    {
+        "access_code": "KGN3BRZX",
+        "challenge_id": "FannieMae_challenge20190122181957",
+        "challenge_name": "Housing insights “in-between” Datasets",
+        "company_id": "5c47a51d84cdc53a9cf34e31",
+        "company_name": "Fannie Mae",
+        "num_winners": 1,
+        "winners": []
+    },
+    {
+        "access_code": "AKR4HCM4",
+        "challenge_id": "1517Fund_challenge20190122181957",
+        "challenge_name": "Most Unique Hack",
+        "company_id": "5c47a51d84cdc53a9cf34e32",
+        "company_name": "1517 Fund",
+        "num_winners": 15,
+        "winners": []
+    },
+    {
+        "access_code": "6RHT34D4",
+        "challenge_id": "Bloomberg_challenge20190122181957",
+        "challenge_name": "Best Philanthropic Hack",
+        "company_id": "5c47a51d84cdc53a9cf34e33",
+        "company_name": "Bloomberg",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "44PWBQD2",
+        "challenge_id": "Paypal_challenge20190122181957",
+        "challenge_name": "Most Futuristic Hack",
+        "company_id": "5c47a51d84cdc53a9cf34e34",
+        "company_name": "Paypal",
+        "num_winners": 11,
+        "winners": []
+    },
+    {
+        "access_code": "Z6U8G2DV",
+        "challenge_id": "CipherTechSolutions_challenge20190122181957",
+        "challenge_name": "Best Digital Forensic Hack",
+        "company_id": "5c47a51d84cdc53a9cf34e35",
+        "company_name": "Cipher Tech Solutions",
+        "num_winners": 1,
+        "winners": []
+    },
+    {
+        "access_code": "JRVXBF3T",
+        "challenge_id": "BoozAllenHamilton_challenge20190122181957",
+        "challenge_name": "Best Hack for Aiding Natural Disaster Recovery Efforts",
+        "company_id": "5c47a51d84cdc53a9cf34e36",
+        "company_name": "Booz Allen Hamilton",
+        "num_winners": 3,
+        "winners": []
+    },
+    {
+        "access_code": "J9PF7B8P",
+        "challenge_id": "Facebook_challenge20190122181958",
+        "challenge_name": "Best Hack (be passionate)",
+        "company_id": "5c47a51e84cdc53a9cf34e37",
+        "company_name": "Facebook",
+        "num_winners": 16,
+        "winners": []
+    },
+    {
+        "access_code": "CWUEX7E6",
+        "challenge_id": "MongoDB_challenge20190122181958",
+        "challenge_name": "Best Use of MongoDB Stitch",
+        "company_id": "5c47a51e84cdc53a9cf34e38",
+        "company_name": "MongoDB",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "XRM4B3AD",
+        "challenge_id": "CredibleBehavioralHealth_challenge20190122181958",
+        "challenge_name": "Improving Healthcare with Mobile Technologies",
+        "company_id": "5c47a51e84cdc53a9cf34e39",
+        "company_name": "Credible Behavioral Health",
+        "num_winners": 3,
+        "winners": []
+    },
+    {
+        "access_code": "Z9PBG2EB",
+        "challenge_id": "SparkPost_challenge20190122181958",
+        "challenge_name": "Best use of SparkPost API",
+        "company_id": "5c47a51e84cdc53a9cf34e3a",
+        "company_name": "SparkPost",
+        "num_winners": 4,
+        "winners": []
+    },
+    {
+        "access_code": "WBF9VUFP",
+        "challenge_id": "LockheedMartin_challenge20190122181958",
+        "challenge_name": "Using Virtual Reality Technology Design the Best Manufacturing Facility",
+        "company_id": "5c47a51e84cdc53a9cf34e3b",
+        "company_name": "Lockheed Martin",
+        "num_winners": 1,
+        "winners": []
+    },
+    {
+        "access_code": "ZMGJDAPA",
+        "challenge_id": "CapitalOne_challenge20190122181958",
+        "challenge_name": "Best Financial Hack",
+        "company_id": "5c47a51e84cdc53a9cf34e3c",
+        "company_name": "Capital One",
+        "num_winners": 7,
+        "winners": []
+    },
+    {
+        "access_code": "WG9KHHBC",
+        "challenge_id": "Microsoft_challenge20190122181958",
+        "challenge_name": "Best Accessibility Hack",
+        "company_id": "5c47a51e84cdc53a9cf34e3d",
+        "company_name": "Microsoft",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "BWWFAA49",
+        "challenge_id": "Esri_challenge20190122181959",
+        "challenge_name": "Best Hack with Esri APIs and SDKs",
+        "company_id": "5c47a51f84cdc53a9cf34e3e",
+        "company_name": "Esri",
+        "num_winners": 4,
+        "winners": []
+    },
+    {
+        "access_code": "7PY3CA7V",
+        "challenge_id": "BestUseofAWS_challenge20190122181959",
+        "challenge_name": "Amazon Web Services",
+        "company_id": "5c47a51f84cdc53a9cf34e3f",
+        "company_name": "Best Use of AWS",
+        "num_winners": 5,
+        "winners": []
+    },
+    {
+        "access_code": "NEHXPCAA",
+        "challenge_id": "Ark_challenge20190122181959",
+        "challenge_name": "Decentralise Everything: Blockchain challenge",
+        "company_id": "5c47a51f84cdc53a9cf34e40",
+        "company_name": "Ark",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "H89V4FWZ",
+        "challenge_id": "Finra_challenge20190122181959",
+        "challenge_name": "Best Designed Investor Education Product",
+        "company_id": "5c47a51f84cdc53a9cf34e41",
+        "company_name": "Finra",
+        "num_winners": 3,
+        "winners": []
+    },
+    {
+        "access_code": "FHMYKEYY",
+        "challenge_id": "FannieMae_challenge20190122182030",
+        "challenge_name": "Housing insights “in-between” Datasets",
+        "company_id": "5c47a53e84cdc53a9cf34e42",
+        "company_name": "Fannie Mae",
+        "num_winners": 1,
+        "winners": []
+    },
+    {
+        "access_code": "Q6YVQWZJ",
+        "challenge_id": "1517Fund_challenge20190122182030",
+        "challenge_name": "Most Unique Hack",
+        "company_id": "5c47a53e84cdc53a9cf34e43",
+        "company_name": "1517 Fund",
+        "num_winners": 15,
+        "winners": []
+    },
+    {
+        "access_code": "K6CC3BGR",
+        "challenge_id": "Bloomberg_challenge20190122182030",
+        "challenge_name": "Best Philanthropic Hack",
+        "company_id": "5c47a53e84cdc53a9cf34e44",
+        "company_name": "Bloomberg",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "7GRF8V4H",
+        "challenge_id": "Paypal_challenge20190122182030",
+        "challenge_name": "Most Futuristic Hack",
+        "company_id": "5c47a53e84cdc53a9cf34e45",
+        "company_name": "Paypal",
+        "num_winners": 11,
+        "winners": []
+    },
+    {
+        "access_code": "Y2V9GKE2",
+        "challenge_id": "CipherTechSolutions_challenge20190122182031",
+        "challenge_name": "Best Digital Forensic Hack",
+        "company_id": "5c47a53f84cdc53a9cf34e46",
+        "company_name": "Cipher Tech Solutions",
+        "num_winners": 1,
+        "winners": []
+    },
+    {
+        "access_code": "Y6HXVCRG",
+        "challenge_id": "BoozAllenHamilton_challenge20190122182031",
+        "challenge_name": "Best Hack for Aiding Natural Disaster Recovery Efforts",
+        "company_id": "5c47a53f84cdc53a9cf34e47",
+        "company_name": "Booz Allen Hamilton",
+        "num_winners": 3,
+        "winners": []
+    },
+    {
+        "access_code": "C2JKVRDY",
+        "challenge_id": "Facebook_challenge20190122182031",
+        "challenge_name": "Best Hack (be passionate)",
+        "company_id": "5c47a53f84cdc53a9cf34e48",
+        "company_name": "Facebook",
+        "num_winners": 16,
+        "winners": []
+    },
+    {
+        "access_code": "KZWGFEV8",
+        "challenge_id": "MongoDB_challenge20190122182031",
+        "challenge_name": "Best Use of MongoDB Stitch",
+        "company_id": "5c47a53f84cdc53a9cf34e49",
+        "company_name": "MongoDB",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "NRKN73PH",
+        "challenge_id": "CredibleBehavioralHealth_challenge20190122182031",
+        "challenge_name": "Improving Healthcare with Mobile Technologies",
+        "company_id": "5c47a53f84cdc53a9cf34e4a",
+        "company_name": "Credible Behavioral Health",
+        "num_winners": 3,
+        "winners": []
+    },
+    {
+        "access_code": "VQ3AXUAT",
+        "challenge_id": "SparkPost_challenge20190122182031",
+        "challenge_name": "Best use of SparkPost API",
+        "company_id": "5c47a53f84cdc53a9cf34e4b",
+        "company_name": "SparkPost",
+        "num_winners": 4,
+        "winners": []
+    },
+    {
+        "access_code": "UW3QM88U",
+        "challenge_id": "LockheedMartin_challenge20190122182031",
+        "challenge_name": "Using Virtual Reality Technology Design the Best Manufacturing Facility",
+        "company_id": "5c47a53f84cdc53a9cf34e4c",
+        "company_name": "Lockheed Martin",
+        "num_winners": 1,
+        "winners": []
+    },
+    {
+        "access_code": "2X34TJ6F",
+        "challenge_id": "CapitalOne_challenge20190122182032",
+        "challenge_name": "Best Financial Hack",
+        "company_id": "5c47a54084cdc53a9cf34e4d",
+        "company_name": "Capital One",
+        "num_winners": 7,
+        "winners": []
+    },
+    {
+        "access_code": "3UGM7RJF",
+        "challenge_id": "Microsoft_challenge20190122182032",
+        "challenge_name": "Best Accessibility Hack",
+        "company_id": "5c47a54084cdc53a9cf34e4e",
+        "company_name": "Microsoft",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "EJFXKN98",
+        "challenge_id": "Esri_challenge20190122182032",
+        "challenge_name": "Best Hack with Esri APIs and SDKs",
+        "company_id": "5c47a54084cdc53a9cf34e4f",
+        "company_name": "Esri",
+        "num_winners": 4,
+        "winners": []
+    },
+    {
+        "access_code": "JCKFB3U9",
+        "challenge_id": "BestUseofAWS_challenge20190122182032",
+        "challenge_name": "Amazon Web Services",
+        "company_id": "5c47a54084cdc53a9cf34e50",
+        "company_name": "Best Use of AWS",
+        "num_winners": 5,
+        "winners": []
+    },
+    {
+        "access_code": "NHV27AEU",
+        "challenge_id": "Ark_challenge20190122182032",
+        "challenge_name": "Decentralise Everything: Blockchain challenge",
+        "company_id": "5c47a54084cdc53a9cf34e51",
+        "company_name": "Ark",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "C8H2VZQE",
+        "challenge_id": "Finra_challenge20190122182032",
+        "challenge_name": "Best Designed Investor Education Product",
+        "company_id": "5c47a54084cdc53a9cf34e52",
+        "company_name": "Finra",
+        "num_winners": 3,
+        "winners": []
+    },
+    {
+        "access_code": "UQQNYQ9A",
+        "challenge_id": "FannieMae_challenge20190122182036",
+        "challenge_name": "Housing insights “in-between” Datasets",
+        "company_id": "5c47a54484cdc53a9cf34e53",
+        "company_name": "Fannie Mae",
+        "num_winners": 1,
+        "winners": []
+    },
+    {
+        "access_code": "DRC6W8YE",
+        "challenge_id": "1517Fund_challenge20190122182036",
+        "challenge_name": "Most Unique Hack",
+        "company_id": "5c47a54484cdc53a9cf34e54",
+        "company_name": "1517 Fund",
+        "num_winners": 15,
+        "winners": []
+    },
+    {
+        "access_code": "RCYTJY4A",
+        "challenge_id": "Bloomberg_challenge20190122182036",
+        "challenge_name": "Best Philanthropic Hack",
+        "company_id": "5c47a54484cdc53a9cf34e55",
+        "company_name": "Bloomberg",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "BAAMW9B2",
+        "challenge_id": "Paypal_challenge20190122182036",
+        "challenge_name": "Most Futuristic Hack",
+        "company_id": "5c47a54484cdc53a9cf34e56",
+        "company_name": "Paypal",
+        "num_winners": 11,
+        "winners": []
+    },
+    {
+        "access_code": "22GTUTMZ",
+        "challenge_id": "CipherTechSolutions_challenge20190122182036",
+        "challenge_name": "Best Digital Forensic Hack",
+        "company_id": "5c47a54484cdc53a9cf34e57",
+        "company_name": "Cipher Tech Solutions",
+        "num_winners": 1,
+        "winners": []
+    },
+    {
+        "access_code": "K9YV9YH9",
+        "challenge_id": "BoozAllenHamilton_challenge20190122182037",
+        "challenge_name": "Best Hack for Aiding Natural Disaster Recovery Efforts",
+        "company_id": "5c47a54584cdc53a9cf34e58",
+        "company_name": "Booz Allen Hamilton",
+        "num_winners": 3,
+        "winners": []
+    },
+    {
+        "access_code": "AAZU9DKT",
+        "challenge_id": "Facebook_challenge20190122182037",
+        "challenge_name": "Best Hack (be passionate)",
+        "company_id": "5c47a54584cdc53a9cf34e59",
+        "company_name": "Facebook",
+        "num_winners": 16,
+        "winners": []
+    },
+    {
+        "access_code": "HGBA43XD",
+        "challenge_id": "MongoDB_challenge20190122182037",
+        "challenge_name": "Best Use of MongoDB Stitch",
+        "company_id": "5c47a54584cdc53a9cf34e5a",
+        "company_name": "MongoDB",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "A8PCTKVR",
+        "challenge_id": "CredibleBehavioralHealth_challenge20190122182037",
+        "challenge_name": "Improving Healthcare with Mobile Technologies",
+        "company_id": "5c47a54584cdc53a9cf34e5b",
+        "company_name": "Credible Behavioral Health",
+        "num_winners": 3,
+        "winners": []
+    },
+    {
+        "access_code": "B67KDGNG",
+        "challenge_id": "SparkPost_challenge20190122182037",
+        "challenge_name": "Best use of SparkPost API",
+        "company_id": "5c47a54584cdc53a9cf34e5c",
+        "company_name": "SparkPost",
+        "num_winners": 4,
+        "winners": []
+    },
+    {
+        "access_code": "U7TUQW99",
+        "challenge_id": "LockheedMartin_challenge20190122182037",
+        "challenge_name": "Using Virtual Reality Technology Design the Best Manufacturing Facility",
+        "company_id": "5c47a54584cdc53a9cf34e5d",
+        "company_name": "Lockheed Martin",
+        "num_winners": 1,
+        "winners": []
+    },
+    {
+        "access_code": "UM7NEQYV",
+        "challenge_id": "CapitalOne_challenge20190122182037",
+        "challenge_name": "Best Financial Hack",
+        "company_id": "5c47a54584cdc53a9cf34e5e",
+        "company_name": "Capital One",
+        "num_winners": 7,
+        "winners": []
+    },
+    {
+        "access_code": "KKXBBZDC",
+        "challenge_id": "Microsoft_challenge20190122182038",
+        "challenge_name": "Best Accessibility Hack",
+        "company_id": "5c47a54684cdc53a9cf34e5f",
+        "company_name": "Microsoft",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "NP87MYXV",
+        "challenge_id": "Esri_challenge20190122182038",
+        "challenge_name": "Best Hack with Esri APIs and SDKs",
+        "company_id": "5c47a54684cdc53a9cf34e60",
+        "company_name": "Esri",
+        "num_winners": 4,
+        "winners": []
+    },
+    {
+        "access_code": "AD68TM3Q",
+        "challenge_id": "BestUseofAWS_challenge20190122182038",
+        "challenge_name": "Amazon Web Services",
+        "company_id": "5c47a54684cdc53a9cf34e61",
+        "company_name": "Best Use of AWS",
+        "num_winners": 5,
+        "winners": []
+    },
+    {
+        "access_code": "C67DTX2B",
+        "challenge_id": "Ark_challenge20190122182038",
+        "challenge_name": "Decentralise Everything: Blockchain challenge",
+        "company_id": "5c47a54684cdc53a9cf34e62",
+        "company_name": "Ark",
+        "num_winners": 6,
+        "winners": []
+    },
+    {
+        "access_code": "VREUB634",
+        "challenge_id": "Finra_challenge20190122182038",
+        "challenge_name": "Best Designed Investor Education Product",
+        "company_id": "5c47a54684cdc53a9cf34e63",
+        "company_name": "Finra",
+        "num_winners": 3,
+        "winners": []
+    }
+]
+
+
+5c4bc0dbfc964f100c7722a1

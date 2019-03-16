@@ -1,0 +1,91 @@
+﻿Submission Title,Submission Url,Plain Description,Video,Website,File Url,Desired Prizes,Built With,"Does Your Hack Need To Stay At Your Current Table? (I.E. Hardware, Vr/Ar Hacks That Are Difficult To Move.) If So, What Table Number Are You At?",Mlh Points   List All The Schools On Your Team!,Mlh Software Lab,Mlh Hardware Lab,Submitter Screen Name,College/Universities Of Team Members,Additional Team Member Count,Team Member 1 Screen Name,...
+WISearch,https://technica2018.devpost.com/submissions/105730-wisearch,"Inspiration
+
+In the entire world, women are underrepresented in STEM fields.
+Despite several efforts to revert this scenario, the gender difference in STEM fields has remained the same for decades. This fact points to the inefficiency of previous efforts in addressing this issue
+The phenomenon of gender inequality in STEM seems not to relate exclusively on gender inequality. Finland, for example, excels in gender equality, but has one of the highest gender gaps in STEM college degrees.
+In this context, the question I want to address is: what can we do to EFFECTIVELY decrease the gender gap in STEM?
+
+What it does
+
+The final project is a simulator that predicts the percentage of Women among graduates in STEM fields based on data on educational policies, economy and politics. 
+Users must answer several questions, such as ""what is the employment rate?"" or ""what is the difference in mathematics tests between boys and girls?"" and, at the end, the software will return the expected percentage difference of Woman among STEM graduates. 
+The user can also chose a country among a library of 65 countries and, instead of inserting values for the questions, use the values correspondent to the situation of the chosen country in as many questions as the user likes. 
+If a country is chosen, the software will also return the increase/decrease of representation of woman in STEM in the user's hypothetical situation compared to the current situation of the country.
+In this context, the software could allow governments to test and introduce truly effective measures to decrease the gender gap in STEM fields. Similarly, companies and individuals would also be able to better develop solutions to increase the representation of woman in STEM fields.
+Lastly, the results could allow us to create new methods of education specially designed to decrease gender inequality in diverse fields.
+
+How I built it
+
+I used a machine learning algorithm to predict the percentage difference of Women among graduates in STEM fields based on:
+
+
+Gender difference in science literacy (Programme for International Student Assessment)
+Gender difference in intra-individual (relative) science literacy scores (Programme for International Student Assessment)
+Gender difference in Self efficacy (Programme for International Student Assessment)
+Gender difference in broad interest in science (Programme for International Student Assessment)
+Gender difference in enjoyment of science (Programme for International Student Assessment)
+Gender difference in mathematics scores (Programme for International Student Assessment)
+Gender difference in intra-individual mathematics scores (Programme for International Student Assessment)
+Gender difference in reading scores (Programme for International Student Assessment)
+Gender difference in intra-individual reading scores (Programme for International Student Assessment)
+Global gender gap index (World Economic Forum)
+Unemployment rate (trading economics)
+Fertility rate (the world bank)
+Per capita GPA (CIA)
+Government investment in education (United Nations)
+Gini index of inequality (CIA)
+Number of universities divided by the population (Consejo Superior de Investigaciones CientÃ­ficas (CSIC) and United Nations)
+Number of universities among the top 5,000 universities in the world divided by the population (Consejo 
+Superior de Investigaciones CientÃ­ficas (CSIC) and United Nations)
+
+
+Challenges I ran into
+
+
+Leaning machine learning on my own in order to make the project possible
+Adjusting the variables so they are in the same order of magnitude to improve the algorithm 
+Choosing a good alpha parameter for my cost function to decrease properly
+Finding good reliable data for all the countries I wanted to search
+Time management 
+
+
+Accomplishments that I'm proud of
+
+
+Being able to learn and implement machine learning
+Being able to decrease my cost function at each iteration (what shows the machine learning code is working)
+Getting results that make sense according to the research projects on gender inequality on STEM I studied
+Making something that can have a huge social impact
+Finishing the project on time
+Connecting with brilliant girls during the hackathon
+
+
+What I learned
+
+The indices of woman representation in STEM has, in fact, a negative correlation with gender inequality (obtained through the global gender gap index). This result supports the results found in the paper ""The Gender-Equality Paradox in Science,Technology, Engineering, and Mathematics Education"" (Stoet et. all, 2018), which shows that the countries with the largest gender equality have the largest gender gaps in STEM in secondary and tertiary education. That shows that the causes of the problem may be much more complicated than what we've though and can give an insight into the reason why, despite all efforts towards decreasing gender inequality in STEM, the problem persists. 
+A positive correlation was found between woman representation in STEM and indices such as intra-individual reading scores and intra-individual math scores, factors that are usually ignored in solutions trying to minimize gender inequality in STEM.
+
+What's next for WISearch
+
+
+Introduce more variables (specially related to education)
+Introduce more countries
+Build a better user interface and a graphic representation of the result
+Make the software available for companies and governments to use
+
+",,https://github.com/gilemos/WISearch,https://s3.amazonaws.com/challengepost/zip_files/production/37848/zip_files/projetoooo.pptx,"Best Financial Hack - Capital One, Best Computer Vision / AI System - Altamira, Best ""Light the Way"" Hack - Technica, Best Use of a Data Set - Ebay, Best use of Machine Learning - Booz Allen Hamilton, Best Social Good Hack - MLH, Best AWS Hack - AWS, Best Overall Hack - Facebook, Best Money Management Hack - FINRA","java, machine-learning, onu, cia, csic, world-bank",,Johns Hopkins University,,,GiovannaLemosRibeiro,Johns Hopkins University,0,,
+women emPOWERed,https://technica2018.devpost.com/submissions/105731-women-empowered,"Inspiration Two computer science and a studio art freshman teamed up at a hackathon. Our task: to create something to light the way for women in STEM. We decided to use this light as the motivation for our app. As you progress through our timeline mapping the history of women who were pioneers in STEM, the light bulb fills up to depict a gradient of light (in the Technica colors, no less).
+
+What it does The app takes the user through a timeline of historical innovations in STEM, all spearheaded by women. It empowers girls to take risks and pursue their own paths to STEM careers.
+
+How we built it We combined our technical and artistic skills using AppLab and Procreate to make the app. We started by sketching out the design for the light bulb, the theme for the program. We then added event listeners using javascript to transition between periods in history and to animate the light bulb.
+
+Challenges we ran into The brainstorming process was definitely a challenge. We struggled to narrow down our ideas to one concrete plan, because we wanted to do so much but only had a brief timespan in which to execute it. This is also our first time at a hackathon, so it was intimidating to get started! Luckily, our team worked well together and we were able to come up with something that felt authentic.
+
+Accomplishments that we're proud of We really like our user interface, and we think that it will appeal to girls everywhere who are interested in STEM.
+
+What we learned We learned how to work together in under 24 hours to create an app! Aside from that, we learned a lot from the events held at Technica, like the Git and machine learning workshops.
+
+What's next for women emPOWERed We hope to develop this into a full time app using Android Studio. Hopefully, it will expand to have more features, like a job inspiration category, which would take a persons interests into account and run an algorithm to predict a STEM-related career that they might enjoy.
+",,https://studio.code.org/projects/applab/4Gdks8IO1vL7zFc51yL8V8RaigPxcxYNS1E1ILXlzbs,https://s3.amazonaws.com/challengepost/zip_files/production/37849/zip_files/emPOWERed_-_App_Lab.htm,"Best ""Light the Way"" Hack - Technica, Best Hack for Social Good - JP Morgan Chase, Best Social Good Hack - MLH, Best Overall Hack - Facebook, Best First Time Hack - Technica",javascript,,university of maryland,,,00roshnipatel,University of Maryland - College Park,2,vivianyeh000,elizabeth-chen

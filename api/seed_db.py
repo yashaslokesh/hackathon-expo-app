@@ -47,12 +47,22 @@ class Project:
         self.project_url = project_url
         self.challenges = challenges
         self.table_number = ""
-        
+
         # description scraping
-        r = requests.get(str(project_url));
-        soup = BeautifulSoup(r.text, 'lxml')
-        description = soup.find(id="app-details-left")
-        self.plain_descrp = str(description)
+        ## check valid url
+        regex = re.compile(
+            r'^(?:http|ftp)s?://' # http:// or https://
+            r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?))' # domain...
+            r'(?:/?|[/?]\S+)$', re.IGNORECASE)
+
+        if re.match(regex, project_url):
+            r = requests.get(project_url)
+            soup = BeautifulSoup(r.text)
+            description = soup.find(id="app-details-left")
+        else:
+            description = "No description available -- invalid URL"
+
+        self.plain_description = str(description)
 
     def __str__(self):
         return str(self.table_number) + " " + str(self.project_url)
@@ -186,7 +196,7 @@ def parse_csv_internal(reader, not_moving_question=None):
             not_moving[project_name].table_number = needs_to_stay.group(0)
         else:
             moving[project_name] = Project(project_url, challenges)
-            
+
     return moving, not_moving
 
 
