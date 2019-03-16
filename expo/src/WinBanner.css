@@ -1,0 +1,10 @@
+.banner {
+  display: flex;
+  border: 5px solid #6c757d;
+  border-radius: 25px;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+}
