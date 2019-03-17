@@ -60,7 +60,7 @@ class Project:
             soup = BeautifulSoup(r.text)
             description = soup.find(id="app-details-left")
         else:
-            description = "No description available -- invalid URL"
+            description = "N/A"
 
         self.plain_description = str(description)
 

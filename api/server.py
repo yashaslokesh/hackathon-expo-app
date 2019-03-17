@@ -93,7 +93,7 @@ def get_project(project_id):
         'project_url': project_obj['project_url'],
         'challenges': project_obj['challenges'],
         'challenges_won': project_obj['challenges_won'],
-        'plain_description': project_obj.get('plain_description',"No description available")
+        'plain_description': project_obj.get('plain_description',"N/A")
     }
 
     return jsonify(temp_project)
