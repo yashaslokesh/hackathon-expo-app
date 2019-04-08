@@ -458,7 +458,7 @@ def delete_company(company_id):
 @is_admin
 def add_challenge_to_company(company_id):   
     companies = mongo.db.companies
-    logged_message(f'endpoint = api/companies/id/<company_id>/challenges/add, method = POST, params = NONE, type = admin')
+    logged_message(f'endpoint = /api/companies/id/<company_id>/challenges/add, method = POST, params = NONE, type = admin')
 
     company_obj = companies.find_one({'_id': ObjectId(company_id)})
     challenges_obj = company_obj['challenges']
@@ -529,7 +529,7 @@ def get_company(company_id):
 @is_admin
 def get_all_companies():
     companies = mongo.db.companies
-    logged_message(f'endpoint =/api/companies, method = GET, params = NONE, type = admin')
+    logged_message(f'endpoint = /api/companies, method = GET, params = NONE, type = admin')
     output = []
     for curr_company in companies.find():
         output.append(format_company_obj_to_old_schema(curr_company))
@@ -564,7 +564,7 @@ def format_company_obj_to_old_schema(company_obj):
 @is_admin
 def get_company_cleaner_schema(company_id):
     companies = mongo.db.companies
-    logged_message(f'endpoint =/api/v2/companies/id/{company_id}, method = GET, params = NONE, type = admin')
+    logged_message(f'endpoint = /api/v2/companies/id/{company_id}, method = GET, params = NONE, type = admin')
     company_obj = companies.find_one({'_id': ObjectId(company_id)})
     output = {
         'company_id': str(company_obj['_id']),
@@ -578,7 +578,7 @@ def get_company_cleaner_schema(company_id):
 @is_admin
 def get_all_companies_cleaner_schema():
     companies = mongo.db.companies
-    logged_message(f'endpoint =/api/v2/companies/id/{company_id}, method = GET, params = NONE, type = admin')
+    logged_message(f'endpoint = /api/v2/companies/id/{company_id}, method = GET, params = NONE, type = admin')
     output = []
     for c in companies.find():
         temp_company = {
@@ -601,7 +601,7 @@ def get_all_companies_cleaner_schema():
 def get_logged_in_company_cleaner_schema():
     if 'user_type' in session and session['user_type'] == 'sponsor':
         companies = mongo.db.companies
-        logged_message(f'endpoint =/api/v2/companies/current_sponsor, method = GET, params = NONE, type = sponsor')
+        logged_message(f'endpoint = /api/v2/companies/current_sponsor, method = GET, params = NONE, type = sponsor')
         company_obj = companies.find_one({'company_name': {'$eq': session['name']}})
         output = {
             'company_id': str(company_obj['_id']),
@@ -617,7 +617,7 @@ def get_logged_in_company_cleaner_schema():
 @is_sponsor_or_admin
 def update_project_challenge_status(project_id):
     projects = mongo.db.projects
-    logged_message(f'endpoint =/api/projects/id/{project_id}/challenge_status, method = POST, params = {project_id}, type = sponsor')
+    logged_message(f'endpoint = /api/projects/id/{project_id}/challenge_status, method = POST, params = {project_id}, type = sponsor')
 
     company_name = request.json['company_name']
     challenge_name = request.json['challenge_name']
@@ -653,7 +653,7 @@ def update_win_status(project_challenge_obj, company_name, challenge_name, didWi
 @is_sponsor_or_admin
 def make_winner(project_id):
     projects = mongo.db.projects
-    logged_message(f'endpoint =/api/projects/id/{project_id}/makeWinner, method = POST, params = {project_id}, type = sponsor')    
+    logged_message(f'endpoint = /api/projects/id/{project_id}/makeWinner, method = POST, params = {project_id}, type = sponsor')    
     companies = mongo.db.companies
     company_id = request.json['company_id']
     challenge_id = request.json['challenge_id']
@@ -696,7 +696,7 @@ def make_winner(project_id):
 @is_sponsor_or_admin
 def make_non_winner(project_id):
     projects = mongo.db.projects
-    logged_message(f'endpoint =/api/projects/id/{project_id}/makeNonWinner, method = POST, params = {project_id}, type = sponsor')    
+    logged_message(f'endpoint = /api/projects/id/{project_id}/makeNonWinner, method = POST, params = {project_id}, type = sponsor')    
     companies = mongo.db.companies
     company_id = request.json['company_id']
     challenge_id = request.json['challenge_id']
@@ -729,13 +729,47 @@ def make_non_winner(project_id):
 
     return "Updated project " + project_id
 
+@app.route('/api/companies/id/<company_id>/challenges/<challenge_id>/resetWinners', methods=['PUT'])
+def resetChallenges(company_id, challenge_id):
+    projects = mongo.db.projects
+    logged_message(f'endpoint = /api/companies/id/{company_id}/challenges/{challenge_id}/resetWinners, method = POST, params = {company_id},{challenge_id}, type = sponsor') 
+    companies = mongo.db.companies
+    company_obj = companies.find_one({'_id': ObjectId(company_id)})
+    challenge_obj = company_obj['challenges'][challenge_id]
+    print(challenge_obj)
+    challenge_name = challenge_obj['challenge_name']
+
+    for project_id in company_obj['challenges'][challenge_id]['winners']:
+            project_obj = projects.find_one({'_id': ObjectId(project_id)})
+            if project_obj is None:
+                continue
+            company_name = company_obj['company_name']
+            updated_challenges_list = list(map(lambda challenge_obj: update_win_status(challenge_obj, company_name, challenge_name, False), project_obj['challenges']))
+            project_obj['challenges'] = updated_challenges_list
+            old_challenges_won_list = project_obj['challenges_won']
+            project_obj['challenges_won'] = list(filter(lambda c_id: c_id != challenge_id, old_challenges_won_list))
+            projects.find_one_and_update(
+                {'_id': ObjectId(project_id)},
+                {'$set': project_obj}
+            )
+            print(project_obj)
+
+    # Modify company object
+    old_winners_list = challenge_obj['winners']
+    company_obj['challenges'][challenge_id]['winners'] = []
+    companies.find_one_and_update(
+        {'_id': ObjectId(company_id)},
+        {'$set': company_obj}
+    )
+    return "Reset Challenge winners " + str(company_obj)
+
 
 # Auth routes ##################################################################
 # Modifies the user's session
 
 @app.route('/api/whoami', methods=['GET'])
 def return_session_info():
-    logged_message(f'endpoint =/api/whoami, method = GET, params = NONE, type = auth')        
+    logged_message(f'endpoint = /api/whoami, method = GET, params = NONE, type = auth')        
     if 'user_type' in session:
         return json.dumps({
             'user_type': session['user_type'],  # sponsor or admin
@@ -747,7 +781,7 @@ def return_session_info():
 @app.route('/api/login/sponsor', methods=['POST'])
 def sponsor_login():
     companies = mongo.db.companies
-    logged_message(f'endpoint =/api/login/sponsor, method = POST, params = NONE, type = auth')            
+    logged_message(f'endpoint = /api/login/sponsor, method = POST, params = NONE, type = auth')            
     attempted_access_code = request.json['access_code'].upper()
     if attempted_access_code == '':
         return "Access denied."
@@ -763,7 +797,7 @@ def sponsor_login():
 @app.route('/api/login/admin', methods=['POST'])
 def admin_login():
     attempted_access_code = request.json['access_code'].upper()
-    logged_message(f'endpoint =/api/login/admin, method = POST, params = NONE, type = auth')                
+    logged_message(f'endpoint = /api/login/admin, method = POST, params = NONE, type = auth')                
     if attempted_access_code != current_app.config['ADMIN_ACCESS_CODE'].upper():
         return "Access denied."
     else:
@@ -774,7 +808,7 @@ def admin_login():
 
 @app.route('/api/logout', methods=['POST'])
 def logout():
-    logged_message(f'endpoint =/api/logout, method = POST, params = NONE, type = auth')                    
+    logged_message(f'endpoint = /api/logout, method = POST, params = NONE, type = auth')                    
     session.pop('user_type', None)
     session.pop('name', None)
     session.pop('id', None)
