@@ -3,9 +3,14 @@ import projectData from "responseData/projects.json";
 import challengeData from "responseData/challenges.json";
 
 const backendDevURL = 'http://localhost:8000/';
+<<<<<<< HEAD
 //const prodURL = "https://expo-api.gotechnica.org/";
 
 //const URL = prodURL;
+=======
+// const prodURL = "https://expo-api.gotechnica.org/";
+
+>>>>>>> c58319c01f729d5b2d78c6b3cf3c000057259b38
 const URL = backendDevURL;
 export const useCachedResponseData = false;
 
